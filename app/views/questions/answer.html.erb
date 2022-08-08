@@ -1,0 +1,12 @@
+<div class="d-flex align-items-center justify-content-center" style="height: 350px">
+  <div class="p-5">
+    <div style="background-color: #999999; padding: 20px; width: 400px;">
+      <p>You said: <strong>"<%= params[:question] %>"</strong></p>
+    </div>
+
+    <div style="background-color: #feffbd; padding: 20px; width: 400px;">
+      <h3>Your coach replied: <strong>"<%= @answer %>"</strong>
+    </div>
+    <p class="pt-3"><%= link_to 'Ask another question', ask_path %></p>
+  </div>
+</div>
